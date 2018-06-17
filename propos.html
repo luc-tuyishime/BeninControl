@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <!-- Theme Made By www.w3schools.com - No Copyright -->
+      <title>SHB</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="shortcut icon" href="img/favicon.png">
+      <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+      <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+      <link rel="stylesheet" href="style.css">
+   </head>
+   <style>
+      body, html {
+      height: 100%;
+      margin: 0;
+      font: 400 15px/1.8 "Lato", sans-serif;
+      background-color: #f3f3f3;
+      }
+      .container{
+      width: 95%;
+      }
+      .bgimg-1, .bgimg-2, .bgimg-3 {
+      position: relative;
+      opacity: 0.65;
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      }
+      .bgimg-1 {
+      background-image: url("rain.mp4");
+      min-height: 100%;
+      }
+      .bgimg-2 {
+      background-image: url("img/usine.jpg");
+      min-height: 400px;
+      }
+      .bgimg-3 {
+      background-image: url("img/oil.jpg");
+      min-height: 400px;
+      }
+      .parallax {
+      /* The image used */
+      background-image: url('img/banner_2.png');
+      /* Full height */
+      height: 100%;
+      /* Create the parallax scrolling effect */
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      }
+      .parallax0 {
+      /* The image used */
+      background-image: url('img/huile.png');
+      /* Full height */
+      height: 100%;
+      /* Create the parallax scrolling effect */
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      }
+      .parallax01 {
+      /* The image used */
+      background-image: url('img/drop2.png');
+      /* Full height */
+      height: 100%;
+      /* Create the parallax scrolling effect */
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      }
+      .parallax1 {
+      /* The image used */
+      background-image: url('img/usine.jpg');
+      /* Full height */
+      height: 100%;
+      /* Create the parallax scrolling effect */
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      }
+      .parallax2 {
+      /* The image used */
+      background-image: url('img/Banner_4.png');
+      /* Full height */
+      height: 100%;
+      /* Create the parallax scrolling effect */
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      }
+      .parallax3 {
+      /* The image used */
+      background-image: url('img/drop3.png');
+      /* Full height */
+      height: 100%;
+      /* Create the parallax scrolling effect */
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      }
+
+      .jumbo33 {
+          height: 87vh;
+          position: relative;
+          color: black;
+          background-color: white;
+          background-image: url(img/sommehome.jpeg);
+          background-attachment: fixed;
+          /*  background-repeat: no-repeat;
+          background-position: center; */
+          background-size: cover;
+      }
+
+      .caption {
+      position: absolute;
+      left: 0;
+      top: 50%;
+      width: 100%;
+      text-align: center;
+      color: #000;
+      }
+      .caption span.border {
+      background-color: #111;
+      color: #fff;
+      padding: 18px;
+      font-size: 25px;
+      letter-spacing: 10px;
+      }
+      h3 {
+      letter-spacing: 5px;
+      text-transform: uppercase;
+      font: 20px "Lato", sans-serif;
+      color: #111;
+      }
+      /* Turn off parallax scrolling for tablets and phones */
+      @media only screen and (max-device-width: 1024px) {
+      .bgimg-1, .bgimg-2, .bgimg-3 {
+      background-attachment: scroll;
+      }
+      }
+      /* .fullScreenPhoto2{
+      width: 100%;
+      height:300px;
+      margin:0;
+      background-color: white;
+      }
+      .fullScreenPhoto3{
+      width: 100%;
+      margin:0;
+      height:300px;
+      background-color: white;
+      }
+      .fullScreenPhoto4{
+      background-color: white;
+      } */
+      video {
+      top: 50%;
+      left: 50%;
+      width: 100%;
+      height: 100%;
+      width: auto;
+      height: auto;
+      z-index: -100;
+      transform: translateX(-50%) translateY(-50%);
+      background-size: cover;
+      transition: 1s opacity;
+      }
+      .video-container {
+      height: 100%;
+      }
+      .video-parallax {
+      -webkit-transition-position: fixed;
+      position: fixed;
+      }
+   </style>
+   <body bgcolor="#616161">
+      <nav class="navbar navbar-default navbar-fixed-top">
+         <div class="">
+            <div class="navbar-header">
+               <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+               </button>
+               <a class="navbar-brand" href="index2.html"><img src="img/logo.png" class="img-responsive img-logo"></a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+               <ul class="nav navbar-nav navbar-right">
+                  <li><a href="index2.html">Accueil</a></li>
+                  <li><a href="produit.html">Nos Marques</a></li>
+                  <li class="dropdown">
+                     <a class="dropdown-toggle" data-toggle="dropdown" href="#">Nos Produits
+                     <span class="caret"></span></a>
+                     <ul class="dropdown-menu">
+                        <li><a href="huile.html">Huiles</a></li>
+                        <li><a href="tourteau.html">Tourteaux</a></li>
+                        <li><a href="aliment-betail.html">Aliment de Betail</a></li>
+                        <li><a href="coque-coton.html">Coques de coton</a></li>
+                     </ul>
+                  </li>
+                  <li><a class="current" href="propos.html">Qui sommes nous</a></li>
+                  <li><a href="contact.html">Contact</a></li>
+               </ul>
+            </div>
+         </div>
+      </nav>
+      <br><br><br>
+      <div class="container-fluid jumbo33 text-justify">
+                <div class="text-content-who-we-are">
+                    <div class="col-md-6">
+                  <h1 class="header-color animated  swing">La Société des Huileries du Bénin</h1>
+                  <p  class="text-two22 animated bounceInLeft">Créée en 1997, SHB est une société anonyme de droit Béninois. Elle fait partie du groupe béninois SFP (Société Financière et de Participation).</p>
+               </div>
+         </div>
+      </div>
+      <!-- <div class="video-container">
+         <video autoplay poster="" class="video-parallax" loop muted>
+           <source src="video.mp4" type="video/mp4">
+           <source src="video.mp4" type="video/mp4">
+         </video>
+
+         </div> -->
+      <!-- <div class="container">
+         <div style="color: #777;background-color:white;padding:60px;text-align:left;">
+            <div class="row">
+             <div class="col-md-6" style="text-align:justify">
+               <h1 style="" class="header-color animated  swing">La Société des Huileries du Bénin</h1>
+                <p  class="text-two animated bounceInLeft">Depuis 1997, la SHB est un acteur incontournable dans la production et la commercialisation d'huile végétale à base de coton au Bénin.</p>
+             </div>
+            </div>
+          </div>
+         </div> -->
+      </div>
+      <br></br>
+      <!-- <div class="parallax">
+         </div> -->
+      <div class="container">
+         <div style="color: #777;background-color:white;text-align:left;padding:60px;">
+           <div class="row">
+           <div class="col-md-8 col-md-offset-2" style="text-align:justify">
+            <!-- <h1 style="" class="animated  swing propos-title-1">L’entreprise SHB</h1> -->
+            <p  style="" class="text-two_4 animated bounceInRight propos-title-2">Avec une usine constamment modernisée, la SHB triture des graines oléagineuses en général et des graines de coton en particulier (capacité 120.000T/an).</p>
+            <p  style="" class="text-two_4 animated bounceInRight propos-title-2">Grâce à cet outil performant, la SHB-BOHICON assure aux consommateurs béninois et plus largement de la CEDEAO un approvisionnement en huile alimentaire de première qualité.</p>
+            <p  style="" class="text-two_4 animated bounceInRight propos-title-2">Conscient, que des produits de qualité, des clients satisfaits et des hommes fiers de leur travail, ne sont que le résultat d’un travail de qualité, SHB s’est dotée d’un laboratoire performant qui contrôle chaque étape de la production (depuis la réception des matières premières jusqu’au conditionnement produits finis). </p>
+            <p  style="" class="text-two_4 animated bounceInRight propos-title-2">Dans le cadre de sa politique qualité et  développement durable, SHB s’est engagée dans la démarche qualité conforme à la norme ISO 9001 version 2015. Entièrement impliqué dans le système qualité, le personnel, plus de 400 employés, œuvre au quotidien pour développer davantage la culture de la qualité et un esprit d’entreprise sans lesquels la bonne image mise en évidence par nos produits et services ne saurait faire notre fierté. </p>
+           </div>
+          </div>
+         </div>
+      </div>
+      <!-- <div class="parallax01">
+         </div> -->
+      <!-- <div class="container">
+         <div style="color: #777;background-color:white;text-align:left;padding:60px;">
+           <div class="row">
+           <div class="col-md-6"  style="text-align:justify">
+            <h1 style="" class="animated  swing propos-title-1">Engagement de qualité</h1>
+            <p  style="" class="text-two_4 animated bounceInRight propos-title-2">Des produits de qualité, des clients satisfaits et des hommes fiers de leur travail, ne sont que le résultat d’un travail de qualité. A la SHB, nous nous assurons d’utiliser les meilleurs ingrédients et ressources dans la chaine de production de nos produits. Parce que nous avons un intérêt particulier pour la satisfaction de nos clients, nous mettons un point d’honneur quand a la supervision et control qualité de nos huiles.</p>
+           </div>
+       </div>
+       </div>
+      </div> -->
+        <!-- <div class="parallax2">
+        </div> -->
+       <!-- <div class="video-container">
+       <img id="plane" src="img/shb-oil.png" class="img-responsive img-respon   animated  swing">
+
+       </div> -->
+      <!-- <div class="container">
+         <div style="color: #777;background-color:white;padding:60px;">
+           <div class="row">
+           <div class="col-md-7">
+            <h1  class="animated  swing propos-title-1">Cultiver l’esprit d’entreprise</h1>
+              <p style="text-align:justify" class="text-two_4 animated bounceInRight propos-title-2">A la SHB, notre personnel œuvre au quotidien pour l’amélioration continue de la qualité de nos produits car ceux ci font notre fierté. Avec un effectif de 400 employés, le personnel de la SHB fait prévue d’une diversité remarquable d’hommes et de femmes aux compétences reconnues, ce qui fait selon nous le succès de notre entreprise. Le personnel SHB, c’est une grande variété de métiers de la transformation de la graine jusqu’au consommateur.</p>
+           </div>
+       </div>
+       </div>
+      </div> -->
+      <!-- <div class="video-container">
+         <video autoplay poster="" class="video-parallax" loop muted>
+           <source src="video.mp4" type="video/mp4">
+           <source src="video.mp4" type="video/mp4">
+         </video>
+         </div> -->
+      <!-- <div class="parallax3">
+         </div> -->
+      <!-- <div class="fullScreenPhoto4">
+         <div class="container-fluid">
+            <div class="row">
+               <h1 class="text-center header-produit propos-title-1">Le personnel dirigeant</h1>
+               <div class="col-md-3">
+                  <img src="img/people.png" class="img-responsive svg-img animated  bounceInRight">
+               </div>
+               <div class="col-md-3">
+                  <img src="img/people.png" class="img-responsive svg-img animated  bounceInRight">
+               </div>
+               <div class="col-md-3">
+                  <img src="img/people.png" class="img-responsive svg-img animated  bounceInRight">
+               </div>
+               <div class="col-md-3">
+                  <img src="img/people.png" class="img-responsive svg-img animated  bounceInRight">
+               </div>
+            </div>
+         </div>
+         <br><br><br>
+      </div> -->
+      </div>
+      <!-- <div class="container-fluid">
+         <div class="row">
+
+           <div class="col-md-6">
+             <img src="img/image7.jpg" class="img-responsive svg-img animated  bounceInLeft">
+
+           </div>
+
+           <div class="col-md-6">
+             <div class="text-content2">
+         <h1 class="animated  swing propos-title-1">L’entreprise SHB</h1>
+         <p  class="text-two_3 animated bounceInRight propos-title-2">Implantée à Bohicon (Benin) la SHB collecte des graines de Cotton puis assure leur transformation en huiles végétales pour l’alimentation humaine et en tourteaux pour l’alimentation animale. A la Société des Huileries du Bénin, la fabrication de nos produits repose sur 3 valeurs fondamentales : La bonne gouvernance, L’efficacité, La réactivité</p>
+
+         </div>
+         </div>
+         </div>
+         </div> -->
+      <!-- <div class="container-fluid jumbo2 bg-1 text-center">
+         <div class="row">
+         <div class="col-md-4">
+         <div class="text-content-home2">
+         <h1 class="text-left animated  swing propos-title-1">L’entreprise SHB</h1>
+         <p  class="text-two_3 animated bounceInRight propos-title-2">Implantée à Bohicon (Benin) la SHB collecte des graines de Cotton puis assure leur transformation en huiles végétales pour l’alimentation humaine et en tourteaux pour l’alimentation animale. A la Société des Huileries du Bénin, la fabrication de nos produits repose sur 3 valeurs fondamentales : La bonne gouvernance, L’efficacité, La réactivité</p>
+         </div>
+         </div>
+         </div>
+         </div>
+
+
+         <div class="container-fluid">
+         <div class="row">
+
+          <div class="col-md-6">
+           <div class="text-content2">
+           <div class="">
+           <h1 class="animated  swing propos-title-1">Engagement de qualité</h1>
+           <p  class="text-two_3 animated bounceInLeft propos-title-2">Les produits SHB, huile raffinée de coton (Vitalor), tourteau de coton et l’aliment de Bétail (vitanimal) sont confectionnes avec le plus grand soin dans nos usines au Benin. Des produits de qualité, des clients satisfaits et des hommes fiers de leur travail, ne sont que le résultat d’un travail de qualité. A la SHB, nous nous assurons d’utiliser les meilleurs ingrédients et ressources dans la chaine de production de nos produits. Parce que nous avons un intérêt particulier pour la satisfaction de nos clients, nous mettons un point d’honneur quand a la supervision et control qualité de nos huiles. </p>
+           </div>
+           </div>
+         </div>
+
+           <div class="col-md-6">
+             <img src="img/image7.jpg" class="img-responsive svg-img animated  bounceInLeft">
+           </div>
+
+         </div>
+         </div>
+
+         <div class="container-fluid">
+         <div class="row">
+
+           <div class="col-md-6">
+             <img src="img/joy1.png" class="img-responsive svg-img animated  bounceInRight">
+             <h2 class="text-center">Nom,Prenom<br> Poste</h2>
+           </div>
+
+          <div class="col-md-6">
+           <div class="text-content2">
+           <h1 class="animated swing propos-title-1">Cultiver l’esprit d’entreprise</h1>
+           <p  class="text-two_3 animated bounceInLeft  propos-title-2">A la SHB, notre personnel œuvre au quotidien pour l’amélioration continue de la qualité de nos produits car ceux ci font notre fierté.Avec un effectif de 400 employés, le personnel de la SHB fait prévue d’une diversité remarquable d’hommes et de femmes aux compétences reconnues, ce qui fait selon nous le succès de notre entreprise. Le personnel SHB, c’est une grande varie de métiers de la transformation de la graine jusqu’au consommateur.</p>
+
+           </div>
+         </div>
+         </div>
+         </div>
+         <div class="container-fluid">
+           <h1 class="text-center header-produit propos-title-1">Le personnel dirigeant</h1>
+         <div class="row">
+
+
+
+         </div>
+         </div> -->
+      <!--  -->
+      <footer class="container-fluid bg-4">
+         <div class="container">
+            <div class="row">
+               <div class="div-up">
+                  <div class="col-md-2"></div>
+                  <div class="col-md-2">
+                     <!-- <p style="color:##e0e0e0" class="logo-1">liens</p> -->
+                     <span><a style="color: #fff!important" class="link-footer" href="index2.html">Accueil</a></span>
+                     <br>
+                     <span><a style="color: #fff!important" class="link-footer" href="produit.html">Nos Marques</a></span> <br>
+                     <span><a style="color: #fff!important" class="link-footer" href="propos.html">Qui sommes nous</a></span>  <br>
+                     <span><a style="color: #fff!important" class="link-footer" href="contact.html">Contact</a></span>
+                  </div>
+                  <div class="col-md-2">
+                     <p class="logo-1">Nos Produits</p>
+                     <span><a style="color: #fff!important" class="link-footer" href="huile.html">Huiles</a></span>
+                     <br>
+                     <span><a style="color: #fff!important" class="link-footer" href="tourteau.html">Tourteaux</a></span>
+                     <br>
+                     <span><a style="color: #fff!important" class="link-footer" href="aliment-betail.html">Aliment de Betail</a></span>
+                     <br>
+                     <span><a style="color: #fff!important" class="link-footer" href="coque-coton.html">Coques de coton</a></span>
+                  </div>
+                  <div class="col-md-2">
+                     <p class="logo-1">Shb sur les réseaux</p>
+                     <div class="logo-social">
+                        <img  src="img/face.png" class=" logo-hover  animated  swing"> &nbsp;  &nbsp;  &nbsp;
+                        <img  src="img/insta.png" class=" logo-hover  animated  swing"> &nbsp;  &nbsp;  &nbsp;
+                        <img  src="img/youtube.png" class="logo-hover   animated  swing">
+                     </div>
+                     <div>
+                     </div>
+                  </div>
+                  <div class="col-md-2 ">
+                     <img src="img/logowhite.png" class="img-responsive img-logo3" />
+                  </div>
+               </div>
+            </div>
+         </div>
+      </footer>
+      <footer class="container-fluid bg-6 text-center">
+         <div class="row">
+            <div class="col-md-4 col-md-offset-4">
+               <p class="footer-font-2">Site réalisé par : <a href="http://universum.coolpage.biz" target="_blank"><span style="font-weight: bold" class="footer-font-2">universum & associates</span></a></p>
+            </div>
+         </div>
+      </footer>
+      <script src="//ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <script src="bootstrap/js/bootstrap.min.js"></script>
+   </body>
+</html>

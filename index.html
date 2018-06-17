@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Login</title>
+ <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="img/favicon.png">
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css"> 
+   <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">	
+</head>
+<style>
+	@import url(http://fonts.googleapis.com/css?family=Roboto:400);
+body {
+  background-color:#fff;
+  -webkit-font-smoothing: antialiased;
+  font: normal 14px Roboto,arial,sans-serif;
+}
+
+.container {
+    padding-top: 200px;
+}
+
+.form-login {
+    background-color: #EDEDED;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 15px;
+    border-color:#d2d2d2;
+    border-width: 5px;
+    box-shadow:0 1px 0 #cfcfcf;
+}
+
+h4 { 
+ border:0 solid #fff; 
+ border-bottom-width:1px;
+ padding-bottom:10px;
+ text-align: center;
+}
+
+.form-control {
+    border-radius: 10px;
+}
+
+.wrapper {
+    text-align: center;
+}
+.btn-primary{
+	width: 100%;
+}
+
+</style>
+<body>
+
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-4 col-md-offset-4 ">
+        	<form name="form-login">
+            <div class="form-login">
+            <h4>Welcome to SHB</h4>
+            <input type="text"  class="form-control input-sm chat-input" name="userid" placeholder="username" />
+            </br>
+            <input type="password" id="userPassword" name="pswrd" class="form-control input-sm chat-input" placeholder="password" />
+            </br>
+            <!-- <div class="wrapper">
+            <input type="button" onclick="check(this.form)" value="Login">
+            </div> -->
+             <button type="button " onclick="check(this.form)" class="btn btn-primary">log in</button>
+
+            </div>
+        </form>
+        </div>
+    </div>
+</div>
+
+
+<script type="text/javascript">
+	function check(form){
+		if(form.userid.value == "SHB" && form.pswrd.value== "adminshb"){
+			window.open('index2.html');
+		}else{
+			alert('le nom d\'utilisateur et le mot de passe ne correspondent pas');
+		}
+	}
+</script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>
