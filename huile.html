@@ -11,14 +11,27 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <style>
-    body, html {
-    height: 100%;
-    margin: 0;
-    font: 400 15px/1.8 "Lato", sans-serif;
-    background-color: #f3f3f3;
-    }
     .container{
     width: 97%;
+    }
+
+    .bg-2 {
+      display: flex;
+      justify-content: center; /* align horizontal */
+      align-items: center; /* align vertical */
+
+      background:
+       /* top, transparent red, faked with gradient */ linear-gradient(
+          rgba(255, 205, 17, 0.5),
+          rgba(255, 205, 17, 0.5)
+        ),
+        /* bottom, image */ url(./img/ui1.jpg);
+      height: 60vh;
+
+      background-attachment: fixed;
+      */background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
     }
 
 </style>
@@ -53,93 +66,35 @@
       </ul>
     </div>
   </div>
-</nav><br><br><br>
+</nav><br>
 <div class="container-fluid bg-2">
+  <div class="lala">
    <div class="row">
       <div class="text-center nos-marque-paragraph">
-         <div class="col-md-8 col-md-offset-2">
-            <h1 class="text-center marque">Huiles</h1>
+         <div class="col-md-12">
+            <h1 class="text-center marque_ animated  bounceInLeft">Huile raffinée</h1>
             <!--  <p class="propos-title-2_">Le rôle Alimentaire de la SHB inscrit nos produits dans le respect de notre mission et de notre engagement de qualité. Confectionnés avec le plus grand soin dans nos usines au Benin, nous veillons à l’amelioration continue de la composition nutritionnelle de nos produits.</p> -->
          </div>
       </div>
    </div>
-   <br><br>
-</div>
-
-<br>
-<div id="section3" class="container">
-  <div class="row">
-    <div  class="col-md-12">
-     <div class="text-position">
-     <h1 class="text-center animated  swing propos-title-1">Huile  rafinée</h1>
-     <!-- <p  class="text-two_3 animated bounceInLeft propos-title-2">Pure huile végétale obtenue de la graine de coton, Vitalor est sans cholestérol, riche en acide linoléique (omega-6), en vitamine E (antioxydant naturel) et enrichie en vitamine A. De couleur dorée et à la saveur agréable, Vitalor est nourrissante et digeste. Vitalor est utilisée aussi bien pour l’assaisonnement que pour la friture où elle est très économique car pouvant être réutilisée plusieurs fois sans aucune dégradation organoleptique. Vitalor est particulièrement appréciée dans les mayonnaises, les vinaigrettes, les sauces et les marinades</p> -->
-       <!-- <a href="img/vitalor.pdf"  download="vitalor"><button type="button" class="btn btn-warning33 btn-lg">telecharger la fiche composition</button></a> -->
-     </div>
-   </div>
-  </div>
-  <div class="text-two01">
-    <div class="row">
-      <div class="col-md-4 col-md-offset-4">
-          <img src="img/bidon.PNG" class="img-responsive huile-pure" />
-      </div>
-    </div>
-  <div  class="row">
-  <div class="col-md-4">
-  <div class="div-huile">
-    <h2 class="header-title">A/Qualité</h2>
-    <p style="font-weight: bold;font-size:15px;">De couleur dorée et de saveur agréable «VITALOR» est une huile de très bonne qualité :</p>
-    <p>- grande pureté</p>
-    <p>- forte stabilité au stockage</p>
-    <p>- performante en friture profonde</p>
-    <p>- absence totale de contamination</p>
-    <p>- sans cholestérol</p>
-    <p>- riche en acide linoléique (omega-6), en vitamine E (antioxydant naturel)</p>
-    <p>- enrichie à la vitamine A</p>
-  </div>
-</div>
-  <div class="col-md-4">
-      <div class="div-huile">
-    <h2 class="header-title">B/ Utilisations courantes</h2>
-    <p>Vitalor est utilisée aussi bien pour l’assaisonnement que pour la friture où elle est très économique car pouvant être réutilisée plusieurs fois sans aucune dégradation organoleptique. Vitalor est particulièrement appréciée dans les mayonnaises, les vinaigrettes, les sauces et les marinades</p>
-  </div>
-</div>
-  <div class="col-md-4">
-    <div class="div-huile">
-    <h2 class="header-title">C/ Conditionnements</h2>
-    <p style="font-weight: bold;font-size:15px;">L’huile raffinée de coton «VITALOR» est conditionnée en trois types d’emballages :</p>
-    <p>- Fûts de 200 litres</p>
-    <p>- Bidon de 5 litres</p>
-    <p>- Bouteille de 1 litre</p>
-  </div>
-  </div>
-  </div>
-
-  </div>
  </div>
+</div>
+<br>
 
-
-<div id="section2" style="color: #777;background-color:white;" class="container text-justify">
+<div id="section2" style="color: #777;background-color:white;" class="container bg-rafinne">
   <div class="row">
-
-   <div class="col-md-6 wrapper">
-    <div class="text-position">
-    <h1 class="text-left animated  swing propos-title-1 paragraph1">Huile Neutre</h1>
-    <p  class="text-two_3 animated bounceInLeft propos-title-2 paragraph">Non comestible, elle est disponible pour les raffineries et livrée en vrac </p>
-    </div>
-  </div>
-  <div class="col-md-2"></div>
-     <div class="col-md-4">
-       <div class="img-second">
-       <img src="img/oilll.jpg" class="rounded  animated  bounceInLeft img-second2" />
-      </div>
-    </div>
+        <div class="col-md-6">
+          <div class="text-position">
+          <h1 class="text-left animated  swing propos-title-1 paragraph1">Huile raffinée</h1>
+          <p  class="text-two_3 animated bounceInLeft propos-title-2 paragraph">Non comestible, elle est disponible pour les raffineries et livrée en vrac </p>
+          </div>
+        </div>
   </div>
 </div>
 
 
-
-<div id="section2" style="color: #777;background-color:white;" class="container text-justify">
-  <div class="row">
+<div id="section2" style="color: #777;background-color:white;" class="container bg-soya">
+  <!-- <div class="row">
 
    <div class="col-md-6 wrapper">
     <div class="text-position">
@@ -150,25 +105,33 @@
   <div class="col-md-2"></div>
      <div class="col-md-4">
        <div class="image-cropper-soya">
-       <img src="img/soya.jpg" class="rounded     animated  bounceInLeft" />
+       <img src="img/soya.jpg" class="rounded  animated  bounceInLeft" />
 
       </div>
        <p class="graine">( Graines de soja )</p>
     </div>
+  </div> -->
+  <div class="row">
+        <div class="col-md-6">
+          <div class="text-position">
+          <h1 class="text-left animated  swing propos-title-1 paragraph1">Huile de Soja</h1>
+          <p  class="text-two_3 animated bounceInLeft propos-title-2 paragraph">L'huile de soja est une huile végétale extraite des graines de soja, elle peut être aussi bien utilisée dans l’alimentation domestique, les cuissons normales mais aussi pour la production de bio carburants. Riche en acide gras essentiels pour le bien-être du corps (Omega 3, Omega 6) et avec une teneur en vitamines A et E, l’huile de soja est un antioxydant puissant et sans cholestérol.</p>
+          </div>
+        </div>
   </div>
 </div>
 
-  <br><br>
+
   <div style="background-color:white !important;" class="text-center">
      <div class="caroussel-home">
-        <h1 class="header-produit">Nos produits</h1>
+        <h2 class="header-produit">Nos produits</h2>
         <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" >
            <!-- Indicators -->
-           <ol class="carousel-indicators hidden-xs">
+           <!-- <ol class="carousel-indicators hidden-xs">
               <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
               <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-              <!--    <li data-target="#carousel-example-generic" data-slide-to="2"></li>-->
-           </ol>
+
+           </ol> -->
            <!-- Wrapper for slides -->
            <div class="carousel-inner hidden-xs" role="listbox">
               <div class="item active">
@@ -192,7 +155,7 @@
                     <div class="col-md-4">
                        <a href="aliment-betail.html">
                           <div class="image-cropper2">
-                             <img src="img/sac.gif" class="rounded  img-respon   animated  bounceInLeft" />
+                             <img src="img/betail.PNG" class="rounded  img-respon   animated  bounceInLeft" />
                           </div>
                           <p class="imge-description">Aliment de betail</p>
                        </a>
@@ -204,7 +167,7 @@
                     <div class="col-md-4">
                        <a href="coque-coton.html">
                           <div class="image-cropper2">
-                             <img src="img/coque.jpg" class="rounded  img-respon   animated  bounceInLeft" />
+                             <img src="img/coque_coton.PNG" class="rounded  img-respon   animated  bounceInLeft" />
                           </div>
                           <p class="imge-description">Coque de coton</p>
                        </a>
@@ -220,7 +183,7 @@
                     <div class="col-md-4">
                        <a href="aliment-betail.html">
                           <div class="image-cropper2">
-                             <img src="img/sac.gif" class="rounded  img-respon   animated  bounceInLeft" />
+                             <img src="img/betail.PNG" class="rounded  img-respon   animated  bounceInLeft" />
                           </div>
                           <p class="imge-description">Aliment de betail</p>
                        </a>
@@ -240,7 +203,7 @@
         </div>
      </div>
   </div>
-  <br></br>
+  <br>
 <!-- The Modal -->
 <div id="myModal2" class="modal">
   <span class="close animated infinite swing">&times;</span>
@@ -301,61 +264,59 @@
 
 
 <script>
-
 function toggleIcon(e) {
-        $(e.target)
-            .prev('.panel-heading')
-            .find(".more-less")
-            .toggleClass('glyphicon-plus glyphicon-minus');
-    }
-    $('.panel-group').on('hidden.bs.collapse', toggleIcon);
-    $('.panel-group').on('shown.bs.collapse', toggleIcon);
+  $(e.target)
+    .prev(".panel-heading")
+    .find(".more-less")
+    .toggleClass("glyphicon-plus glyphicon-minus")
+}
+$(".panel-group").on("hidden.bs.collapse", toggleIcon)
+$(".panel-group").on("shown.bs.collapse", toggleIcon)
 
-
-
-  $('#myModal2').modal({
-    show:false,
-    backdrop:true,
-    keyboard:true
+$("#myModal2").modal({
+  show: false,
+  backdrop: true,
+  keyboard: true
 })
 // Get the modal
-var modal = document.getElementById('myModal2');
+var modal = document.getElementById("myModal2")
 
 // Get the image and insert it inside the modal - use its "alt" text as a caption
-var img = document.getElementById('myImg2');
-var modalImg = document.getElementById("img012");
-var captionText = document.getElementById("caption2");
-img.onclick = function(){
-    modal.style.display = "block";
-    modalImg.src = this.src;
-    captionText.innerHTML = this.alt;
+var img = document.getElementById("myImg2")
+var modalImg = document.getElementById("img012")
+var captionText = document.getElementById("caption2")
+img.onclick = function() {
+  modal.style.display = "block"
+  modalImg.src = this.src
+  captionText.innerHTML = this.alt
 }
 
 // Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
+var span = document.getElementsByClassName("close")[0]
 
 // When the user clicks on <span> (x), close the modal
 span.onclick = function() {
-    modal.style.display = "none";
+  modal.style.display = "none"
 }
 
+$(function() {
+  var img = $("#plane"),
+    width = img.get(0).width,
+    screenWidth = $(window).width(),
+    duration = 50000
 
-  $(function() {
-    var img = $("#plane"),
-        width = img.get(0).width,
-        screenWidth = $(window).width(),
-        duration = 50000;
+  function animatePlane() {
+    img.css("right", -width).animate(
+      {
+        right: screenWidth
+      },
+      duration,
+      animatePlane
+    )
+  }
 
-    function animatePlane() {
-        img.css("right", -width).animate({
-            "right": screenWidth
-        }, duration, animatePlane);
-    }
-
-    animatePlane();
-});
-
-
+  animatePlane()
+})
 </script>
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>

@@ -14,12 +14,32 @@
     body, html {
     height: 100%;
     margin: 0;
-    font: 400 15px/1.8 "Lato", sans-serif;
     background-color: #f3f3f3;
     }
     .container{
     width: 97%;
     }
+
+    .bg-2 {
+      display: flex;
+      justify-content: center; /* align horizontal */
+      align-items: center; /* align vertical */
+
+      background:
+       /* top, transparent red, faked with gradient */ linear-gradient(
+          rgba(255, 205, 17, 0.5),
+          rgba(255, 205, 17, 0.5)
+        ),
+        /* bottom, image */ url(./img/ui1.jpg);
+      height: 60vh;
+
+      background-attachment: fixed;
+      */background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+    }
+
+
 
 </style>
 <body data-spy="scroll" data-target="#myScrollspy" data-offset="50">
@@ -59,53 +79,81 @@
 
  <div class="row">
   <div class="nos-marque-paragraph">
-    <div class="col-md-8 col-md-offset-2">
-     <h1 class="text-center marque">Nos marques, plus qu’un excellent choix </h1>
+    <div class="col-md-10 col-md-offset-1">
+     <h1 class="text-center marque_ animated  bounceInLeft">Nos marques, notre fierté!</h1>
     <!-- <p class="propos-title-2_">Le rôle Alimentaire de la SHB inscrit nos produits dans le respect de notre mission et de notre engagement de qualité. Le groupe SHB est devenu un acteur incontournable de l’industrie agro – alimentaire au Benin avec nos marques phares.</p> -->
   </div>
  </div>
-
-
  </div>
- <br><br>
+
 </div>
+ <br>
 
+<div class="slide-wrapper">
 
+   <div id="homepage-feature" class="carousel slide">
+      <!-- <ol class="carousel-indicators">
+         <li data-target="#homepage-feature" data-slide-to="0" class="active"></li>
+         <li data-target="#homepage-feature" data-slide-to="1"></li>
+      </ol> -->
 
-<br>
-<div style="background-color:white;" class="container bg-9">
-   <div class="row">
-      <div class="col-md-6 part-3 part-padding text-justify">
-         <p class="usine-third3">Les marques SHB</p>
-         <p class="text-two_3 animated bounceInLeft propos-title-2">Développés avec la plus grande inspiration possible et le plus grand soin, nos marques respectent l’image, la vision,  la politique et l’engagement qualité qui sont les nôtres. </p>
-         <p class="text-two_3 animated bounceInLeft propos-title-2">Forte de son expertise dans la production des huiles végétales et des aliments de bétail, la SHB répond à travers ses marques emblématiques, aux exigences des clients en termes d’exquise, de valeur nutritive et de prix.</p>
-         <br>
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner">
+
+         <div class="item active  bg-yellow" style="background-image:url(./img/yellow.svg)">
+              <div class="row">
+                  <div class="col-md-1"></div>
+                    <div class="col-md-4">
+                      <img src="img/pic2.png" class="img-vita" />
+                    </div>
+                    <div class="col-md-2"></div>
+                    <div class="col-md-4 margin-text">
+                      <p style="text-align:justify!important" class="usine-third3">  <p class="usine-third3">Les marques SHB</p></p>
+                     <p style="color:black!important;text-align:justify!important" class="text-two_3 animated bounceInLeft propos-title-2">Développées avec la plus grande inspiration possible et le plus grand soin, nos marques respectent l’image, la vision,  la politique et l’engagement qualité qui sont les nôtres. </p>
+                     <p style="color:black!important;text-align:justify!important" class="text-two_3 animated bounceInLeft propos-title-2">Forte de son expertise dans la production des huiles végétales et des aliments de bétail, la SHB répond à travers ses marques emblématiques aux exigences des clients en termes d’exquise, de valeur nutritive et de prix.</p>
+                    </div>
+                      <div class="col-md-1"></div>
+              </div>
+
+         </div>
+
+         <div class="item" style="background-image:url(./img/green.svg)">
+            <div class="">
+              <div class="row">
+                     <div class="col-md-1"></div>
+                    <div class="col-md-4">
+                      <img src="img/pic1.png" class="img_vitanimal" />
+                    </div>
+                    <div class="col-md-2"></div>
+                    <div class="col-md-4 margin-text">
+                      <p style="text-align:justify!important;">  <p style="color:#fff!important" class="usine-third3">Les marques SHB</p></p>
+                     <p style="color:#fff!important;text-align:justify!important" class="text-two_3 animated bounceInLeft propos-title-2">Développées avec la plus grande inspiration possible et le plus grand soin, nos marques respectent l’image, la vision,  la politique et l’engagement qualité qui sont les nôtres. </p>
+                     <p style="color:#fff!important;text-align:justify!important" class="text-two_3 animated bounceInLeft propos-title-2">Forte de son expertise dans la production des huiles végétales et des aliments de bétail, la SHB répond à travers ses marques emblématiques aux exigences des clients en termes d’exquise, de valeur nutritive et de prix.</p>
+                    </div>
+              </div>
+            </div>
+         </div>
 
       </div>
-      <div class="col-md-1"></div>
-      <div class="col-md-5 part-3">
-         <!-- <img id="plane" src="img/pic2.png" class="img-responsive  animated  swing img-vitalor"> -->
-      </div>
+      <!-- /.carousel-inner -->
+      <!-- Controls -->
+      <a class="left carousel-control" href="#homepage-feature"  data-slide="prev">
+          <span style="color: #ef5350!important" class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#homepage-feature" role="button" data-slide="next">
+          <span style="color: #ef5350!important"  class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+      </a>
+
+
    </div>
+   <!-- /#homepage-feature.carousel -->
+
+
 </div>
 
-<div id="section2" style="color: #777;background-color:white;" class="container text-justify">
-  <div class="row">
-    <h1 class="header-produit-marque text-center" style="">Vitalor & Vitanimal</h1>
-     <!-- <img id="plane" src="http://farm4.static.flickr.com/3632/3573270351_7723ab17ee.jpg" /> -->
-     <div class="col-md-2"></div>
-
-        <div class="col-md-4">
-          <img src="img/pic2.png" class="img-responsive animated bounceInLeft" />
-        </div>
-        <div class="col-md-4">
-          <img src="img/pic1.png" style="margin-left: 40px;" class="img-responsive animated bounceInLeft" />
-        </div>
-     <div class="col-md-2"></div>
-  </div>
-</div>
-
-
+ <br>
 <!-- The Modal -->
 <div id="myModal2" class="modal">
   <span class="close animated infinite swing">&times;</span>
@@ -163,60 +211,59 @@
 </footer>
 
 <script>
-
 function toggleIcon(e) {
-        $(e.target)
-            .prev('.panel-heading')
-            .find(".more-less")
-            .toggleClass('glyphicon-plus glyphicon-minus');
-    }
-    $('.panel-group').on('hidden.bs.collapse', toggleIcon);
-    $('.panel-group').on('shown.bs.collapse', toggleIcon);
+  $(e.target)
+    .prev(".panel-heading")
+    .find(".more-less")
+    .toggleClass("glyphicon-plus glyphicon-minus")
+}
+$(".panel-group").on("hidden.bs.collapse", toggleIcon)
+$(".panel-group").on("shown.bs.collapse", toggleIcon)
 
-
-
-  $('#myModal2').modal({
-    show:false,
-    backdrop:true,
-    keyboard:true
+$("#myModal2").modal({
+  show: false,
+  backdrop: true,
+  keyboard: true
 })
 // Get the modal
-var modal = document.getElementById('myModal2');
+var modal = document.getElementById("myModal2")
 
 // Get the image and insert it inside the modal - use its "alt" text as a caption
-var img = document.getElementById('myImg2');
-var modalImg = document.getElementById("img012");
-var captionText = document.getElementById("caption2");
-img.onclick = function(){
-    modal.style.display = "block";
-    modalImg.src = this.src;
-    captionText.innerHTML = this.alt;
+var img = document.getElementById("myImg2")
+var modalImg = document.getElementById("img012")
+var captionText = document.getElementById("caption2")
+img.onclick = function() {
+  modal.style.display = "block"
+  modalImg.src = this.src
+  captionText.innerHTML = this.alt
 }
 
 // Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
+var span = document.getElementsByClassName("close")[0]
 
 // When the user clicks on <span> (x), close the modal
 span.onclick = function() {
-    modal.style.display = "none";
+  modal.style.display = "none"
 }
 
+$(function() {
+  var img = $("#plane"),
+    width = img.get(0).width,
+    screenWidth = $(window).width(),
+    duration = 50000
 
-  $(function() {
-    var img = $("#plane"),
-        width = img.get(0).width,
-        screenWidth = $(window).width(),
-        duration = 50000;
+  function animatePlane() {
+    img.css("right", -width).animate(
+      {
+        right: screenWidth
+      },
+      duration,
+      animatePlane
+    )
+  }
 
-    function animatePlane() {
-        img.css("right", -width).animate({
-            "right": screenWidth
-        }, duration, animatePlane);
-    }
-
-    animatePlane();
-});
-
+  animatePlane()
+})
 </script>
 <script src="//ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="bootstrap/js/bootstrap.min.js"></script>

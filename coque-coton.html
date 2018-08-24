@@ -21,6 +21,25 @@
        width: 97%;
        }
 
+       .bg-2 {
+         display: flex;
+         justify-content: center; /* align horizontal */
+         align-items: center; /* align vertical */
+
+         background:
+          /* top, transparent red, faked with gradient */ linear-gradient(
+             rgba(255, 205, 17, 0.5),
+             rgba(255, 205, 17, 0.5)
+           ),
+           /* bottom, image */ url(./img/ui1.jpg);
+         height: 60vh;
+
+         background-attachment: fixed;
+         */background-repeat: no-repeat;
+         background-position: center;
+         background-size: cover;
+       }
+
    </style>
    <body data-spy="scroll" data-target="#myScrollspy" data-offset="50">
       <nav class="navbar navbar-default navbar-fixed-top">
@@ -57,8 +76,8 @@
       <div class="container-fluid bg-2">
          <div class="row">
             <div class="text-center nos-marque-paragraph">
-               <div class="col-md-8 col-md-offset-2">
-                  <h1 class="text-center marque">Coques de coton  </h1>
+               <div class="col-md-12">
+                  <h1 class="text-center marque_ animated  bounceInRight">Coques de coton</h1>
                   <!--  <p class="propos-title-2_">Le rôle Alimentaire de la SHB inscrit nos produits dans le respect de notre mission et de notre engagement de qualité. Confectionnés avec le plus grand soin dans nos usines au Benin, nous veillons à l’amelioration continue de la composition nutritionnelle de nos produits.</p> -->
                </div>
             </div>
@@ -66,35 +85,47 @@
          <br><br>
       </div>
       <br>
-      <div id="section3" style="color: #777;background-color:white;" class="container text-justify">
+      <!-- <div id="section3" style="color: #777;background-color:white;" class="container text-justify">
          <div class="row">
             <div class="col-md-6 wrapper">
                <div class="text-position">
-                  <h1 class="text-left animated  swing propos-title-1">Coques de coton</h1>
+                  <h1 class="text-left animated  bounceInLeft propos-title-1">Coques de coton</h1>
                   <p  class="text-two_3 animated bounceInLeft propos-title-2">Les coques de coton sont  très cellulosiques (53%  de cellulose). Les coques de coton sont relativement appétissantes et peuvent stimuler l'ingestion dans les rations de vaches laitières pauvres en fibres.</p>
                   <p  class="text-two_3 animated bounceInLeft propos-title-2">D’aucuns les utilisent aussi pour la production d’énergie écologique ou pour la production de champignons comestibles</p>
-                  <a href="img/coque.pdf"  download="coque de coton"><button type="button" class="btn btn-warning33 btn-lg">telecharger la fiche composition</button></a>
+                  <a href="img/coque.pdf" download="coque de coton"><button type="button" class="btn btn-warning33 btn-lg">telecharger la fiche composition</button></a>
                </div>
             </div>
             <div class="col-md-3"></div>
             <div class="col-md-3">
                <div class="image-cropper">
-                  <img src="img/coque.jpg" class="rounded     animated  bounceInLeft" />
+                  <img src="img/coque_coton.PNG" class="rounded     animated  bounceInLeft" />
                </div>
             </div>
          </div>
+      </div> -->
+      <div id="section2" style="color: #777;background-color:white;" class="container bg-coque">
+        <div class="row">
+                <div class="col-md-6">
+                   <div class="text-position">
+                      <h1 class="text-left animated  bounceInLeft propos-title-1">Coques de coton</h1>
+                      <p  class="text-two_3 animated bounceInLeft propos-title-2">Les coques de coton sont  très cellulosiques (53%  de cellulose). Les coques de coton sont relativement appétissantes et peuvent stimuler l'ingestion dans les rations de vaches laitières pauvres en fibres.</p>
+                      <p  class="text-two_3 animated bounceInLeft propos-title-2">D’aucuns les utilisent aussi pour la production d’énergie écologique ou pour la production de champignons comestibles</p>
+                      <a href="img/coque.pdf" download="coque de coton"><button type="button" class="btn btn-warning33 btn-lg">telecharger la fiche composition</button></a>
+                   </div>
+        </div>
       </div>
-      <br><br>
+    </div>
+
       <div style="background-color:white !important;" class="text-center">
          <div class="caroussel-home">
             <h1 class="header-produit">Nos produits</h1>
             <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" >
                <!-- Indicators -->
-               <ol class="carousel-indicators hidden-xs">
+               <!-- <ol class="carousel-indicators hidden-xs">
                   <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
                   <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-                  <!--    <li data-target="#carousel-example-generic" data-slide-to="2"></li>-->
-               </ol>
+
+               </ol> -->
                <!-- Wrapper for slides -->
                <div class="carousel-inner hidden-xs" role="listbox">
                   <div class="item active">
@@ -118,7 +149,7 @@
                         <div class="col-md-4">
                            <a href="aliment-betail.html">
                               <div class="image-cropper2">
-                                 <img src="img/sac.gif" class="rounded  img-respon   animated  bounceInLeft" />
+                                 <img src="img/betail.PNG" class="rounded  img-respon   animated  bounceInLeft" />
                               </div>
                               <p class="imge-description">Aliment de betail</p>
                            </a>
@@ -130,7 +161,7 @@
                         <div class="col-md-4">
                            <a href="coque-coton.html">
                               <div class="image-cropper2">
-                                 <img src="img/coque.jpg" class="rounded  img-respon   animated  bounceInLeft" />
+                                 <img src="img/coque_coton.PNG" class="rounded  img-respon   animated  bounceInLeft" />
                               </div>
                               <p class="imge-description">Coque de coton</p>
                            </a>
@@ -146,7 +177,7 @@
                         <div class="col-md-4">
                            <a href="aliment-betail.html">
                               <div class="image-cropper2">
-                                 <img src="img/sac.gif" class="rounded  img-respon   animated  bounceInLeft" />
+                                 <img src="img/betail.PNG" class="rounded  img-respon   animated  bounceInLeft" />
                               </div>
                               <p class="imge-description">Aliment de betail</p>
                            </a>
@@ -166,7 +197,7 @@
             </div>
          </div>
       </div>
-      <br></br>
+      <br>
       <!-- The Modal -->
       <div id="myModal2" class="modal">
          <span class="close animated infinite swing">&times;</span>
@@ -221,61 +252,60 @@
          </div>
       </footer>
       <script>
-         function toggleIcon(e) {
-                 $(e.target)
-                     .prev('.panel-heading')
-                     .find(".more-less")
-                     .toggleClass('glyphicon-plus glyphicon-minus');
-             }
-             $('.panel-group').on('hidden.bs.collapse', toggleIcon);
-             $('.panel-group').on('shown.bs.collapse', toggleIcon);
+      function toggleIcon(e) {
+  $(e.target)
+    .prev(".panel-heading")
+    .find(".more-less")
+    .toggleClass("glyphicon-plus glyphicon-minus")
+}
+$(".panel-group").on("hidden.bs.collapse", toggleIcon)
+$(".panel-group").on("shown.bs.collapse", toggleIcon)
 
+$("#myModal2").modal({
+  show: false,
+  backdrop: true,
+  keyboard: true
+})
+// Get the modal
+var modal = document.getElementById("myModal2")
 
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById("myImg2")
+var modalImg = document.getElementById("img012")
+var captionText = document.getElementById("caption2")
+img.onclick = function() {
+  modal.style.display = "block"
+  modalImg.src = this.src
+  captionText.innerHTML = this.alt
+}
 
-           $('#myModal2').modal({
-             show:false,
-             backdrop:true,
-             keyboard:true
-         })
-         // Get the modal
-         var modal = document.getElementById('myModal2');
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0]
 
-         // Get the image and insert it inside the modal - use its "alt" text as a caption
-         var img = document.getElementById('myImg2');
-         var modalImg = document.getElementById("img012");
-         var captionText = document.getElementById("caption2");
-         img.onclick = function(){
-             modal.style.display = "block";
-             modalImg.src = this.src;
-             captionText.innerHTML = this.alt;
-         }
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none"
+}
 
-         // Get the <span> element that closes the modal
-         var span = document.getElementsByClassName("close")[0];
+$(function() {
+  var img = $("#plane"),
+    width = img.get(0).width,
+    screenWidth = $(window).width(),
+    duration = 50000
 
-         // When the user clicks on <span> (x), close the modal
-         span.onclick = function() {
-             modal.style.display = "none";
-         }
+  function animatePlane() {
+    img.css("right", -width).animate(
+      {
+        right: screenWidth
+      },
+      duration,
+      animatePlane
+    )
+  }
 
-
-           $(function() {
-             var img = $("#plane"),
-                 width = img.get(0).width,
-                 screenWidth = $(window).width(),
-                 duration = 50000;
-
-             function animatePlane() {
-                 img.css("right", -width).animate({
-                     "right": screenWidth
-                 }, duration, animatePlane);
-             }
-
-             animatePlane();
-         });
-
-
-      </script>
+  animatePlane()
+})
+</script>
       <script src="//ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
       <script src="bootstrap/js/bootstrap.min.js"></script>
    </body>
