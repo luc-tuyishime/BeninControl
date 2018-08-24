@@ -1,134 +1,386 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-      <!-- Theme Made By www.w3schools.com - No Copyright -->
-      <title>SHB</title>
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <link rel="shortcut icon" href="img/favicon.png">
-      <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-      <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-      <link rel="stylesheet" href="style.css">
-   </head>
-   <style>
-      body, html {
-      height: 100%;
-      margin: 0;
-      font: 400 15px/1.8 "Lato", sans-serif;
-      background-color: #f3f3f3;
-      }
-      .container{
-      width: 98%;
-      }
-   </style>
-   <body bgcolor="#616161">
-      <nav class="navbar navbar-default navbar-fixed-top">
-         <div class="">
+<head>
+    <!-- Theme Made By www.w3schools.com - No Copyright -->
+    <title>Benin Control</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+    <link rel="shortcut icon" href="img/bc-small.png">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="ken-burns.css">
+</head>
+<style>
+    body,
+    html {
+        font: 400 15px/1.8 "Lato", sans-serif;
+        background-color: #f3f3f3;
+        /* color: #1e73be; */
+    }
+
+    .container {
+        width: 100%;
+    }
+</style>
+
+<body bgcolor="#616161">
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="">
             <div class="navbar-header">
-               <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
                <span class="icon-bar"></span>
                <span class="icon-bar"></span>
                <span class="icon-bar"></span>
                </button>
-               <a class="navbar-brand" href="#"><img src="img/logo.png" class="img-responsive img-logo"></a>
+                <a class="navbar-brand" href="#"><img src="img/bc-small.png" class="img-responsive img-logo"></a>
             </div>
             <div class="collapse navbar-collapse" id="myNavbar">
-               <ul class="nav navbar-nav navbar-right">
-                  <li><a class="current" href="index2.html">Accueil</a></li>
-                  <li><a href="produit.html">Nos Marques</a></li>
-                  <li class="dropdown">
-                     <a class="dropdown-toggle" data-toggle="dropdown" href="#">Nos Produits
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a class="current" href="index2.html">ACCUEIL</a></li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">SERVICES
                      <span class="caret"></span></a>
-                     <ul class="dropdown-menu">
-                        <li><a href="huile.html">Huiles</a></li>
-                        <li><a href="tourteau.html">Tourteaux</a></li>
-                        <li><a href="aliment-betail.html">Aliment de Betail</a></li>
-                        <li><a href="coque-coton.html">Coques de coton</a></li>
-                     </ul>
-                  </li>
-                  <li><a href="propos.html">Qui sommes nous</a></li>
-                  <li><a href="contact.html">Contact</a></li>
-               </ul>
+                        <ul class="dropdown-menu">
+                            <li><a href="inspection.html">Inspection à destination</a></li>
+                            <li><a href="vrac.html">Inspection du vrac</a></li>
+                            <li><a href="scanning.html">Scanning</a></li>
+                            <li><a href="traking.html">Tracking</a></li>
+                            <li><a href="cftvo.html">Centre des Formalités de Transit des Véhicules d&rsquo;Occasion (CFTVO)</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="telechargement.html">TELECHARGEMENT</a></li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">PROCEDURES
+                     <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="procedure_iad.html">Procédure IAD</a></li>
+                            <li><a href="procedure_cftvo.html">Procédures CFTVO</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="questions.html">FOIRE AUX QUESTIONS</a></li>
+                    <li><a  href="contact.html">CONTACT</a></li>
+                </ul>
             </div>
-         </div>
-      </nav>
-      <div class="container-fluid jumbo1  text-justify">
-               <div class="text-content-home">
-                 <div class="col-md-6">
-                  <h1 class="header-color animated  swing">La Société des Huileries du Bénin</h1>
-                  <p  class="text-two22 animated bounceInLeft">La SHB est leader dans la production d’huiles végétales de table et de l’aliment de bétail  au Bénin. Les principales matières premières transformées sont les graines de coton et de soja.</p>
+        </div>
+    </nav>
+
+    <div class="container-fluid">
+        <!-- ++++++++++++++++++++++++++ BOOTSTRAP CAROUSEL +++++++++++++++++++++++++++++ -->
+
+        <div id="kb" class="carousel kb_elastic animate_text kb_wrapper" data-ride="carousel" data-interval="6000" data-pause="hover">
+
+            <!--======= Wrapper for Slides =======-->
+            <div class="carousel-inner" role="listbox">
+
+                <!--========= First Slide =========-->
+                <div class="item active">
+                    <img src="img/bg-01.jpg" alt="slider 01" />
+                    <div class="carousel-caption kb_caption">
+                        <h1 data-animation="animated flipInX">Tracking</h1>
+                        <h2 data-animation="animated flipInX">Suivi électronique de tout bien entrant sur le territoire du Bénin en régime de transit ou de réexportation</h2>
+                    </div>
+                </div>
+
+                <!--========= Second Slide =========-->
+                <div class="item">
+                    <img src="https://unsplash.it/1920/1680?image=874" alt="slider 02">
+                    <div class="carousel-caption kb_caption kb_caption_right">
+                        <h1 data-animation="animated flipInX">SCANNING</h1>
+                        <h2 data-animation="animated flipInX">Visualisation par scanner à rayons- X du contenu des cargaisons de marchandises débarquées au Bénin.</h2>
+                    </div>
+                </div>
+
+                <!--========= Third Slide =========-->
+                <div class="item">
+                    <img src="https://unsplash.it/1920/1680?image=871" alt="slider 03" />
+                    <div class="carousel-caption kb_caption kb_caption">
+                        <h1 data-animation="animated flipInX">INSPECTION À DESTINATION (IAD)</h1>
+                        <h2 data-animation="animated flipInX">Détermination de la valeur en douane et classement tarifaire de toutes les importations à destination du Bénin</h2>
+                    </div>
+                </div>
+            </div>
+
+            <!--======= Navigation Buttons =========-->
+
+            <!--======= Left Button =========-->
+            <a class="left carousel-control kb_control_left" href="#kb" role="button" data-slide="prev">
+              <span class="landing glyphicon  glyphicon-chevron-left" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+
+            <!--======= Right Button =========-->
+            <a class="right carousel-control kb_control_right" href="#kb" role="button" data-slide="next">
+                <span class="landing glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+
+        </div> <!-- ++++++++++++++++++++++ END BOOTSTRAP CAROUSEL +++++++++++++++++++++++ -->
+
+</div>
+
+    <!-- <div class="container">
+         <div style="background-color:white !important;" class="text-center">
+            <div class="caroussel-home">
+               <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" >
+                  <ol class="carousel-indicators hidden-xs">
+                     <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                     <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                  </ol>
+
+                  <div class="carousel-inner hidden-xs" role="listbox">
+                     <div class="item active">
+                       <div class="row">
+                       <div class="col-md-12">
+                          <a href="">
+                            <div class="container-fluid jumbo1  text-justify">
+                                <div class="text-content-home">
+                                    <div class="col-md-8 text-two22">
+                                        <h1 class="header-color animated  swing">Tracking</h1>
+                                        <p class=" animated bounceInLeft">Suivi électronique de tout bien entrant sur le territoire du Bénin en régime de transit ou de réexportation</p>
+                                    </div>
+                                </div>
+                            </div>
+                          </a>
+                       </div>
+                     </div>
+                     </div>
+                     <div class="item">
+                        <div class="row">
+                           <div class="col-md-12">
+                              <a href="">
+                                <div class="container-fluid jumbo1  text-justify">
+                                    <div class="text-content-home">
+                                        <div class="col-md-8 text-two22">
+                                            <h1 class="header-color animated  swing">Tracking</h1>
+                                            <p class=" animated bounceInLeft">Suivi électronique de tout bien entrant sur le territoire du Bénin en régime de transit ou de réexportation</p>
+                                        </div>
+                                    </div>
+                                </div>
+                              </a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+
+                  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                  <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                  </a>
+                  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                  <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                  </a>
                </div>
-             </div>
-      </div>
-      <br>
-      <br></br>
-      <div class="container">
-        <div class="row">
-        <div class="col-md-4">
-        <div style="background-color:white;" class="produit-list">
-          <h1 class="header-produit2">Nos produits</h1>
-          <div class="list-group">
-          <a href="huile.html" class="list-group-item">Huiles <span class="badge"><img src="img/oil.png"></span></a>
-          <a href="tourteau.html" class="list-group-item">Tourteaux <span class="badge"><img src="img/cow-list.png"></span></a>
-          <a href="aliment-betail.html" class="list-group-item">Aliment-betail  <span class="badge"><img src="img/cow-list.png"></span></a>
-          <a href="coque-coton.html" class="list-group-item">Coque de coton <span class="badge"><img src="img/cotton-list.png"></span></a>
+            </div>
+        </div>
+    </div> -->
+
+
+
+    <!-- <div class="container-fluid jumbo1  text-justify">
+        <div class="text-content-home">
+            <div class="col-md-8 text-two22">
+                <h1 class="header-color animated  swing">Tracking</h1>
+                <p class=" animated bounceInLeft">Suivi électronique de tout bien entrant sur le territoire du Bénin en régime de transit ou de réexportation</p>
+            </div>
+        </div>
+    </div> -->
+    <br>
+    <br></br>
+    <div class="container">
+       <div style="color: #777;background-color:white;text-align:left;padding:60px;">
+         <div class="row">
+         <div class="col-md-8 col-md-offset-2">
+          <!-- <h1 style="" class="animated  swing propos-title-1">L’entreprise SHB</h1> -->
+          <p  style="text-align:center" class="text-two_4 animated bounceInRight propos-title-2">
+            La société Bénin Control SA a été mandatée par l’Etat béninois pour la réalisation de prestations dans le cadre du Programme de Vérification des Importations (PVI) de nouvelle génération. </p>
+         </div>
         </div>
        </div>
-       </div>
-        <div class="col-md-8">
-      <div style="background-color:white;" class="produit-image">
-        <img src="img/diagram.JPG" class="img-responsive img-diagram" />
-      </div>
     </div>
+
+    <!-- <div class="container">
+       <div style="color: #777;background-color:white;padding:60px;">
+         <div class="row">
+         <div class="col-md-8 col-md-offset-2">
+
+           <p style="text-align:center" class="usine-third3">Les objectifs du programme</p>
+
+         </div>
+         <div style="background-color:white !important;" class="text-center">
+            <div class="caroussel-home">
+               <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" >
+
+                  <ol class="carousel-indicators hidden-xs">
+                     <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                     <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+
+                  </ol>
+
+                  <div class="carousel-inner hidden-xs" role="listbox">
+                     <div class="item active">
+                        <div class="row">
+                          <div class="col-md-1"></div>
+                           <div class="col-md-5 text-center">
+                              <a href="">
+                                 <div class="image-cropper2">
+                                    <img src="img/01.jpg" class="  img-respon   animated  bounceInLeft" />
+                                 </div>
+                                 <p class="imge-description">Amelioration des recettes douanieres</p>
+                              </a>
+                           </div>
+                           <div class="col-md-5">
+                              <a href="">
+                                 <div class="image-cropper2">
+                                    <img src="img/02.jpg" class="  img-respon   animated  bounceInLeft" />
+                                 </div>
+                                 <p class="imge-description">Facilitation des formalites d'enlevement des marchandises au cordon douanier</p>
+                              </a>
+                           </div>
+                        <div class="col-md-1"></div>
+                        </div>
+                     </div>
+                     <div class="item">
+                        <div class="row">
+                          <div class="col-md-1"></div>
+                           <div class="col-md-5">
+                              <a href="">
+                                 <div class="image-cropper2">
+                                    <img src="img/04.jpg" class="  img-respon   animated  bounceInLeft" />
+                                 </div>
+                                 <p class="imge-description">Renforcement des capacités de l'administration des douanes et transfert de competences</p>
+                              </a>
+                           </div>
+                           <div class="col-md-5">
+                              <a href="">
+                                 <div class="image-cropper2">
+                                    <img src="img/03.jpg" class="  img-respon   animated  bounceInLeft" />
+                                 </div>
+                                 <p class="imge-description">Lutte contre la fraude douaniere et l'insecurite</p>
+                              </a>
+                           </div>
+                          <div class="col-md-1"></div>
+                        </div>
+                     </div>
+                  </div>
+
+                  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                  <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                  </a>
+                  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                  <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                  </a>
+               </div>
+            </div>
+         </div>
+        </div>
+       </div>
+    </div> -->
+
+
+    <div class="container">
+      <div class="row">
+      <div class="col-md-8 col-md-offset-2">
+       <!-- <h1 style="" class="animated  swing propos-title-1">L’entreprise SHB</h1> -->
+        <p style="text-align:center" class="usine-third3">Les objectifs du programme</p>
+      </div>
+      </div>
+    <div class="row row-flex">
+      <div class="col-md-1"></div>
+      <div class="col-md-5 col-sm-6 col-xs-12">
+        <div class="image-cropper2">
+           <img src="img/01.jpg" class="img-responsive  img-respon   animated  bounceInLeft" />
+        </div>
+      </div>
+
+      <div class="col-md-5 col-sm-6 col-xs-12">
+        <div class="content colour-2">
+           <p class="imge-description">Amelioration des recettes douanieres</p>
+        </div>
+      </div>
+     <div class="col-md-1"></div>
+       <div class="col-md-1"></div>
+      <div class="col-md-5 col-sm-6 col-xs-12">
+        <div class="content colour-4">
+           <p class="imge-description">Facilitation des formalites d'enlevement des marchandises au cordon douanier</p>
+        </div>
+      </div>
+      <div class="col-md-5 col-sm-6 col-xs-12">
+        <div class="image-cropper2">
+           <img src="img/02.jpg" class="img-responsive  img-respon   animated  bounceInLeft" />
+        </div>
+      </div>
+      <div class="col-md-1"></div>
+    </div>
+
+    <div class="row row-flex">
+      <div class="col-md-1"></div>
+      <div class="col-md-5 col-sm-6 col-xs-12">
+        <div class="image-cropper2">
+             <img src="img/04.jpg" class="img-responsive  img-respon   animated  bounceInLeft" />
+        </div>
+      </div>
+
+      <div class="col-md-5 col-sm-6 col-xs-12">
+        <div class="content colour-2">
+            <p class="imge-description">Renforcement des capacités de l'administration des douanes et transfert de competences</p>
+        </div>
+      </div>
+     <div class="col-md-1"></div>
+       <div class="col-md-1"></div>
+      <div class="col-md-5 col-sm-6 col-xs-12">
+        <div class="content colour-4">
+             <p class="imge-description">Lutte contre la fraude douaniere et l'insecurite</p>
+        </div>
+      </div>
+      <div class="col-md-5 col-sm-6 col-xs-12">
+        <div class="image-cropper2">
+         <img src="img/03.jpg" class="img-responsive  img-respon   animated  bounceInLeft" />
+        </div>
+      </div>
+      <div class="col-md-1"></div>
     </div>
   </div>
-  <!-- <div class="container-fluid jumbo2 bg-1 text-center">
+
+
+  <div class="container">
+
+
+</div>
+
+   <br>
+    <div class="container text-center">
+       <div style="color: #fff;background-color:#1e73be;text-align:left;padding:60px;">
+         <div class="row">
+         <div class="col-md-8 col-md-offset-2">
+          <!-- <h1 style="" class="animated  swing propos-title-1">L’entreprise SHB</h1> -->
+          <p style="text-align:center;color:#fff;font-size:30px;">Remplissez et déposez vos dossiers en ligne</p>
+          <p style="text-align:center;color:#fff;font-size:22px;">Plateforme de Dépôt des Dossiers des Importateurs </p>
+          <p  style="text-align:center;color:#fff;font-size:17px;" class="text-two_4 animated bounceInRight">
+            La société Bénin Control SA a été mandatée par l’Etat béninois pour la réalisation de prestations dans le cadre du Programme de Vérification des Importations (PVI) de nouvelle génération. </p>
+          </br>
+           <a href=""><button type="button" class="btn btn-acceder btn-warning33 btn-lg"><span class="btn-text">Accéder a la plateforme</span></button></a>
+         </div>
+        </div>
+       </div>
+    </div>
+
+    <!-- <div class="container-fluid jumbo2 bg-1 text-center">
          <div class="row">
 
          </div>
    </div> -->
-    <div class="container">
-         <div class="row">
-         <div class="col-md-6">
-         <div style="background-color:white;" class="produit-list2">
-            <div class="embed-responsive video-embeded embed-responsive-4by3">
-           <iframe class="embed-responsive-item"  src="https://www.youtube.com/embed/eS1u8Ddb5xA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-           </div>
 
-        </div>
-        </div>
-        <div class="col-md-6">
-        <div style="background-color:#ffd600;color:#fff;" class="produit-list2">
-           <h1 class="header-produit0">L'usine SHB</h1>
-           <hr align="left" width="35%">
-          <p class="part_3_subtitle">Avec plus de 20 ans d’expérience, l’usine SHB, située à Bohicon (Bénin) assure la production d’huiles de qualité, pour le bienfait des consommateurs. </p>
-          <a href="produit.html"><button type="button" class="btn btn-warning34 btn-lg">A propos</button></a>
-       </div>
-       </div>
-     </div>
-   </div>
 
-   <div class="container">
-        <div class="row">
-        <div class="col-md-6">
-        <div style="background-color:white;" class="produit-list2">
 
-          <img src="img/bidon.PNG" class="img-responsive img-home-bidon" />
 
-       </div>
-       </div>
-       <div class="col-md-6">
-       <div style="background-color:#fff;color:black;" class="produit-list2">
-          <h1 class="header-produit0"> L’huile Vitalor</h1>
-          <hr align="left" width="35%">
-           <p class="part_3_subtitle text-huile2">Manger vitalor c’est bien, c’est bien manger, et bien manger, c’est vital!</p>
-         <a href="huile.html"><button type="button" class="btn btn-warning34 btn-lg">En savoir plus</button></a>
-      </div>
-      </div>
-    </div>
-  </div>
 
-  <!-- <div id="container"><div>
+
+    <!-- <div id="container"><div>
       <img src="img/bidon.PNG" class="img-responsive img-home-bidon" />
   </div>
     <div class="produit-list2"><h1 class="header-produit0"> L’huile Vitalor</h1>
@@ -137,96 +389,8 @@
    <a href=""><button type="button" class="btn btn-warning34 btn-lg">En savoir plus</button></a></div>
 
     </div> -->
-
-
-
-  <br>
-      <!-- <div class="container-fluid jumbo3 bg-1">
-         </div> -->
-      <br>
-      <div style="background-color:white !important;" class="text-center">
-         <div class="caroussel-home">
-            <h1 class="header-produit">Nos produits</h1>
-            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" >
-               <!-- Indicators -->
-               <ol class="carousel-indicators hidden-xs">
-                  <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-                  <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-                  <!--    <li data-target="#carousel-example-generic" data-slide-to="2"></li>-->
-               </ol>
-               <!-- Wrapper for slides -->
-               <div class="carousel-inner hidden-xs" role="listbox">
-                  <div class="item active">
-                     <div class="row">
-                        <div class="col-md-4 text-center">
-                           <a href="huile.html">
-                              <div class="image-cropper2">
-                                 <img src="img/oil2.jpg" class="rounded  img-respon   animated  bounceInLeft" />
-                              </div>
-                              <p class="imge-description">Huiles</p>
-                           </a>
-                        </div>
-                        <div class="col-md-4">
-                           <a href="tourteau.html">
-                              <div class="image-cropper2">
-                                 <img src="img/cotton2.jpg" class="rounded  img-respon   animated  bounceInLeft" />
-                              </div>
-                              <p class="imge-description">Tourteaux</p>
-                           </a>
-                        </div>
-                        <div class="col-md-4">
-                           <a href="aliment-betail.html">
-                              <div class="image-cropper2">
-                                 <img src="img/sac.gif" class="rounded  img-respon   animated  bounceInLeft" />
-                              </div>
-                              <p class="imge-description">Aliment de betail</p>
-                           </a>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="item">
-                     <div class="row">
-                        <div class="col-md-4">
-                           <a href="coque-coton.html">
-                              <div class="image-cropper2">
-                                 <img src="img/coque.jpg" class="rounded  img-respon   animated  bounceInLeft" />
-                              </div>
-                              <p class="imge-description">Coque de coton</p>
-                           </a>
-                        </div>
-                        <div class="col-md-4">
-                           <a href="tourteau.html">
-                              <div class="image-cropper2">
-                                 <img src="img/cotton2.jpg" class="rounded  img-respon   animated  bounceInLeft" />
-                              </div>
-                              <p class="imge-description">Tourteaux</p>
-                           </a>
-                        </div>
-                        <div class="col-md-4">
-                           <a href="aliment-betail.html">
-                              <div class="image-cropper2">
-                                 <img src="img/sac.gif" class="rounded  img-respon   animated  bounceInLeft" />
-                              </div>
-                              <p class="imge-description">Aliment de betail</p>
-                           </a>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-               <!-- Controls -->
-               <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-               <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-               <span class="sr-only">Previous</span>
-               </a>
-               <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-               <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-               <span class="sr-only">Next</span>
-               </a>
-            </div>
-         </div>
-      </div>
-      <br>
-      <!--  <div class="container-fluid bg-3 text-center">
+    <br>
+    <!--  <div class="container-fluid bg-3 text-center">
          <div id="myCarousel" class="carousel slide" data-ride="carousel">
 
            <ol class="carousel-indicators">
@@ -273,81 +437,63 @@
            </a>
          </div>
          </div>  -->
-      <footer class="container-fluid bg-4">
-         <div class="container">
+    <footer class="container-fluid bg-4">
+        <div class="container footer-contain">
             <div class="row">
-               <div class="div-up">
-                  <div class="col-md-2"></div>
-                  <div class="col-md-2">
-                     <!-- <p style="color:##e0e0e0" class="logo-1">liens</p> -->
-                     <span><a style="color: #fff!important" class="link-footer" href="index2.html">Accueil</a></span>
-                     <br>
-                     <span><a style="color: #fff!important" class="link-footer" href="produit.html">Nos Marques</a></span> <br>
-                     <span><a style="color: #fff!important" class="link-footer" href="propos.html">Qui sommes nous</a></span>  <br>
-                     <span><a style="color: #fff!important" class="link-footer" href="contact.html">Contact</a></span>
-                  </div>
-                  <div class="col-md-2">
-                     <p class="logo-1">Nos Produits</p>
-                     <span><a style="color: #fff!important" class="link-footer" href="huile.html">Huiles</a></span>
-                     <br>
-                     <span><a style="color: #fff!important" class="link-footer" href="tourteau.html">Tourteaux</a></span>
-                     <br>
-                     <span><a style="color: #fff!important" class="link-footer" href="aliment-betail.html">Aliment de Betail</a></span>
-                     <br>
-                     <span><a style="color: #fff!important" class="link-footer" href="coque-coton.html">Coques de coton</a></span>
-                  </div>
-                  <div class="col-md-2">
-                     <p class="logo-1">Shb sur les réseaux</p>
-                     <div class="logo-social">
-                        <img  src="img/face.png" class=" logo-hover  animated  swing"> &nbsp;  &nbsp;  &nbsp;
-                        <img  src="img/insta.png" class=" logo-hover  animated  swing"> &nbsp;  &nbsp;  &nbsp;
-                        <img  src="img/youtube.png" class="logo-hover   animated  swing">
-                     </div>
-                     <div>
-                     </div>
-                  </div>
-                  <div class="col-md-2">
-                     <img src="img/logowhite.png" class="img-responsive img-logo3" />
-                  </div>
-               </div>
+              <div class="col-md-2"></div>
+              <div class="col-md-3">
+                <h3 class="footer-text">Services</h3>
+                <a href="inspection.html"><p class="footer-text2">Inspection a destination</p></a>
+                <a href="vrac.html"><p class="footer-text2">Inspection du vrac</p></a>
+                <a href="scanning.html"><p class="footer-text2">Scanning</p></a>
+                <a href="tracking.html"><p class="footer-text2">Tracking</p></a>
+                <a href=""><p class="footer-text2">© 2017, Benin Control SA, tous droits réservés </p></a>
+              </div>
+              <div class="col-md-3">
+                <h3 class="footer-text">Procédures</h3>
+                <a href="procedure_iad"><p class="footer-text2">Procédure IAD</p></a>
+                <a href="telechargement.html"><p class="footer-text2">Téléchargements</p></a>
+                <a href="questions.html"><p class="footer-text2">Foire aux questions</p></a>
+              </div>
+              <div class="col-md-3">
+                <h3 class="footer-text">Contactez-nous</h3>
+                <a href=""><p class="footer-text2"><img src="img/ctn.png"> Benin Control SA</p></a>
+                <a href=""><p class="footer-text2"><img src="img/house.png"> Lot 4233, Parcelle F, Zongo, Zone Résidentielle, Cotonou - République du Bénin </p></a>
+                <a href=""><p class="footer-text2"><img src="img/phone.png"> +229 21 31 70 70 / 71</p></a>
+                <a href=""><p class="footer-text2"><img src="img/printer.png"> +229 21 31 70 30</p></a>
+                <a href="mailto:info@benincontrol.com?Subject=Hello%20again" target="_top"><p class="footer-text2"><img src="img/mail.png"> info@benincontrol.com</p></a>
+                <a href=""><p class="footer-text2"><img src="img/world.png"> www.benincontrol.com</p></a>
+              </div>
+             <div class="col-md-1"></div>
             </div>
-         </div>
-      </footer>
-      <footer class="container-fluid bg-6 text-center">
-         <div class="row">
+        </div>
+    </footer>
+    <footer class="container-fluid bg-6 text-center">
+        <div class="row">
             <div class="col-md-4 col-md-offset-4">
-               <p class="footer-font-2">Site réalisé par : <a href="http://universum.coolpage.biz" target="_blank"><span style="font-weight: bold" class="footer-font-2">universum & associates</span></a></p>
+                <p class="footer-font-2">Site réalisé par : <a href="http://universum.coolpage.biz" target="_blank"><span style="font-weight: bold" class="footer-font-2">universum & associates</span></a></p>
             </div>
-         </div>
-      </footer>
-      <script language="Javascript">
-         $('#myModal').modal({
-           show:false,
-           backdrop:true,
-           keyboard:true
-         })
-         // Get the modal
-         var modal = document.getElementById('myModal');
+        </div>
+    </footer>
+    <script language="Javascript">
+    var _gaq = _gaq || []
+_gaq.push(["_setAccount", "UA-36251023-1"])
+_gaq.push(["_setDomainName", "jqueryscript.net"])
+_gaq.push(["_trackPageview"])
+;(function() {
+  var ga = document.createElement("script")
+  ga.type = "text/javascript"
+  ga.async = true
+  ga.src =
+    ("https:" == document.location.protocol ? "https://ssl" : "http://www") +
+    ".google-analytics.com/ga.js"
+  var s = document.getElementsByTagName("script")[0]
+  s.parentNode.insertBefore(ga, s)
+})()
+</script>
+    <script src="custom.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+</body>
 
-         // Get the image and insert it inside the modal - use its "alt" text as a caption
-         var img = document.getElementById('myImg');
-         var modalImg = document.getElementById("img01");
-         var captionText = document.getElementById("caption");
-         img.onclick = function(){
-           modal.style.display = "block";
-           modalImg.src = this.src;
-           captionText.innerHTML = this.alt;
-         }
-
-         // Get the <span> element that closes the modal
-         var span = document.getElementsByClassName("close")[0];
-
-         // When the user clicks on <span> (x), close the modal
-         span.onclick = function() {
-           modal.style.display = "none";
-         }
-      </script>
-      <script src="//ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-      <script src="bootstrap/js/bootstrap.min.js"></script>
-   </body>
 </html>
