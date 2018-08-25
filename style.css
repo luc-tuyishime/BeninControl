@@ -1,21 +1,43 @@
 @font-face {
   font-family: greatest;
-  src: url(font/GOTHAM-LIGHT.TTF);
+  src: url(font/OpenSans-Light.ttf);
 }
 
 @font-face {
   font-family: greatests;
-  src: url(font/GOTHAM-BOLD.TTF);
+  src: url(font/OpenSans-Regular.ttf);
 }
 
 @font-face {
-  font-family: greatest-medium;
-  src: url(../font/GOTHAM-MEDIUM.TTF);
+  font-family: greatest-bold;
+  src: url(../font/OpenSans-Bold.ttf);
 }
 
 .navbar-default {
   border-bottom: 3px solid #1e73be !important;
   background-color: #fff !important;
+}
+
+.wrapper:after {
+  position: absolute !important;
+  top: 0px !important;
+  left: 118% !important;
+  display: block !important;
+  width: 2px !important;
+  height: 160px !important;
+  content: "";
+  background-color: #eee !important;
+}
+
+.wrapper2:after {
+  position: absolute !important;
+  top: 20px !important;
+  left: 84% !important;
+  display: block !important;
+  width: 2px !important;
+  height: 160px !important;
+  content: "";
+  background-color: #eee !important;
 }
 
 .navbar-default .navbar-nav > li > a {
@@ -80,46 +102,46 @@ a:link {
 .header-produit {
   padding-top: 50px;
   padding-bottom: 70px;
-  font: 45px greatest-medium;
+  font: 45px greatest;
   color: #1b5e20 !important;
 }
 
 .header-produit-marque {
   padding-top: 20px;
   padding-bottom: 40px;
-  font: 45px greatest-medium;
+  font: 45px greatest;
   color: #1b5e20 !important;
 }
 
 .header-produit0 {
   padding-top: 55px;
   padding-bottom: 8px;
-  font: 45px greatest-medium;
+  font: 45px greatest;
   color: #1b5e20 !important;
 }
 
 .header-produit2 {
   padding-top: 20px;
   padding-bottom: 15px;
-  font: 35px greatest-medium;
+  font: 35px greatest;
   color: #1b5e20 !important;
 }
 
 .usine-third {
   margin-bottom: 30px;
-  font: 35px greatest-medium;
+  font: 35px greatest;
   line-height: 130%;
 }
 
 .usine-third3 {
-  font: 35px greatest-medium;
+  font: 35px greatest;
   line-height: 50px;
   margin-bottom: 50px;
 }
 
 .usine-third2 {
   margin-top: 90px;
-  font: 35px greatest-medium;
+  font: 35px greatest;
   line-height: 130%;
 }
 
@@ -153,7 +175,7 @@ a:link {
   position: absolute;
   top: 50%;
   transform: translate(0, -50%);
-  text-align: center;
+  text-align: left;
 }
 
 .text-content-home2 {
@@ -179,7 +201,7 @@ a:link {
 }
 
 .contact-style {
-  font: 20px greatest-medium;
+  font: 20px greatest;
 }
 
 .nav .current {
@@ -204,29 +226,29 @@ a:link {
 }
 
 .link-footer {
-  font: 17px greatest-medium;
+  font: 17px greatest;
 }
 
 .text-two {
-  font: 18px greatest-medium;
+  font: 18px greatest;
   line-height: 170%;
   color: #fff;
 }
 
 .text-two22 {
-  font: 20px greatest-medium;
+  font: 20px greatest;
   line-height: 170%;
   font-weight: 300;
   text-shadow: 0 0.9 9px #fffff8 !important;
   color: rgba(255, 255, 255, 1) !important;
   z-index: 200;
-  background-color: #0091ea;
+  background-color: #1565c0;
   opacity: 0.8;
   padding: 30px;
 }
 
 .header-title {
-  font: 22px greatest-medium;
+  font: 22px greatest;
 }
 
 .text-two01 {
@@ -254,7 +276,7 @@ a:link {
 }
 
 .header-color22 {
-  font: 45px greatest-medium;
+  font: 45px greatest;
   text-align: left;
   color: #fff !important;
   z-index: 200;
@@ -299,7 +321,7 @@ a:link {
   /* padding-top: 60px;
      padding-bottom: 60px;
      */
-  font: 15px greatest-medium;
+  font: 15px greatest;
   font-weight: bold;
   color: black;
 }
@@ -314,7 +336,7 @@ a:link {
 }
 
 .logo-1 {
-  font: 17px greatest-medium;
+  font: 17px greatest;
   color: #90a4ae;
 }
 
@@ -329,7 +351,7 @@ a:link {
 }
 
 .header-color {
-  font: 25px greatest-medium;
+  font: 25px greatest;
   font-weight: bold;
   text-align: left;
   z-index: 200;
@@ -377,12 +399,12 @@ a:link {
 }
 
 . {
-  font: 45px greatest-medium;
+  font: 45px greatest;
   color: #1b5e20;
 }
 
 .part_3_subtitle {
-  font: 18px greatest-medium;
+  font: 18px greatest;
   font: 18px;
   line-height: 140%;
 }
@@ -408,12 +430,12 @@ a:link {
 }
 
 .marque {
-  font: 45px greatest-medium;
+  font: 45px greatest;
   color: #fff;
 }
 
 .propos-title-1 {
-  font: 45px greatest-medium;
+  font: 45px greatest;
   color: #1b5e20;
   padding-bottom: 30px;
 }
@@ -425,9 +447,35 @@ a:link {
 }
 
 .propos-title-2 {
-  font: 17px greatest;
-  line-height: 170%;
-  color: #616161 !important;
+  font: 47px "greatest-bold";
+  color: black !important;
+}
+
+.propos-title-objectif {
+  font: 27px "greatest-bold";
+  color: black !important;
+  margin-top: 20px !important;
+}
+
+.inline-text {
+  display: inline-flex !important;
+}
+
+.propos-title-objectif_ {
+  font: 20px "greatest";
+  color: black !important;
+}
+
+.propos-title-2_ {
+  font: 47px "greatest-bold";
+  color: black !important;
+}
+
+.propos-title-3 {
+  font: 17px "greatests";
+  color: #424242 !important;
+  text-align: justify !important;
+  margin-top: 10px !important;
 }
 
 .img-huile {
@@ -544,7 +592,7 @@ img {
 }
 
 .no-marque-style {
-  font: 16px greatest-medium;
+  font: 16px greatest;
 }
 
 .open-collapse {
@@ -563,14 +611,14 @@ img {
 }
 
 .btn-warning {
-  font: 13px greatest-medium;
+  font: 13px greatest;
   color: #616161 !important;
   border: 1px solid #bdbdbd !important;
   background: #fff !important;
 }
 
 .btn-warning3 {
-  font: 13px greatest-medium;
+  font: 13px greatest;
   color: #616161 !important;
   border: 1px solid #ffd600 !important;
   border-radius: 16px;
@@ -578,9 +626,9 @@ img {
 }
 
 .btn-warning33 {
-  margin-top: 35px;
+  margin-top: 10px;
   margin-bottom: 25px;
-  font: 12px greatest-medium;
+  font: 12px greatest;
   color: #616161 !important;
   border: 1px solid #1e73be !important;
   border-radius: 16px;
@@ -591,16 +639,11 @@ img {
   margin-top: 35px;
   margin-bottom: 25px;
 
-  font: 12px greatest-medium;
+  font: 12px greatest;
   color: #616161 !important;
   border: 1px solid #1e73be !important;
   border-radius: 16px;
   background: #fff !important;
-}
-
-.btn-acceder {
-  display: block;
-  margin: 0 auto;
 }
 
 .btn-text {
@@ -608,7 +651,7 @@ img {
 }
 
 .btn-warning34 {
-  font: 13px greatest-medium;
+  font: 13px greatest;
   color: #fff !important;
   border: 1px solid #fff !important;
   border-radius: 16px;
@@ -716,11 +759,11 @@ img {
   height: 100vh;
   color: black;
   background-color: white;
-  background-image: url(../img/bg-02.jpg);
+  background-image: url(../img/bg-01.jpg);
   background-attachment: fixed;
   /* background-repeat: no-repeat;
      background-position: center;
-     */
+    */
   background-size: cover;
 }
 
@@ -863,6 +906,35 @@ img {
 
 .text-inspection {
   font-size: 30px;
+  color: #fff;
+  font-weight: bold;
+  font: 35px "greatests";
+}
+
+.text-inspection_ {
+  font-size: 20px;
+  font: 24px "greatest";
+  color: #fff;
+}
+
+.bg-rafinne {
+  height: 50vh;
+  color: black;
+  background-color: white;
+  background-image: url(../img/rafinee.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.bc {
+  height: 50vh;
+  color: black;
+  background-color: white;
+  background-image: url(../img/bc.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .jumbo3 {
@@ -899,14 +971,25 @@ img {
 }
 
 .wrapper:after {
-  position: absolute;
-  top: 30px;
-  left: 118%;
-  display: block;
-  width: 2px;
-  height: 240px;
-  content: "";
-  background-color: #eee;
+  position: absolute !important;
+  top: 30px !important;
+  left: 92% !important;
+  display: block !important;
+  width: 1px !important;
+  height: 150px !important;
+  content: "" !important;
+  background-color: #616161 !important;
+}
+
+.wrapper3:after {
+  position: absolute !important;
+  top: 20px !important;
+  left: 87% !important;
+  display: block !important;
+  width: 1px !important;
+  height: 150px !important;
+  content: "" !important;
+  background-color: #616161 !important;
 }
 
 .text-aliment {
@@ -958,7 +1041,7 @@ img {
 /*Contact sectiom*/
 
 .content-header {
-  font: 45px greatest-medium;
+  font: 45px greatest;
   color: #0091ea;
 }
 
